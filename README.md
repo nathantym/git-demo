@@ -92,7 +92,7 @@ $ git branch
 * main
 ```
 
-And creating then creating the new branch.
+And then creating the new branch.
 
 ```
 $ git checkout -b feature/feature_name
