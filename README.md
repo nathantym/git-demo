@@ -55,7 +55,7 @@ $ ls
 git-demo
 ```
 
-### Navigate to the Repository
+### Navigate to the Local Repository
 
 Finally, change your current working directory to the cloned repository.
 
