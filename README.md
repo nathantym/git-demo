@@ -2,7 +2,7 @@
 
 Git/Github demo.
 
-## GitHub CLI 
+## GitHub CLI
 
 ### Install the GitHub CLI:
 
@@ -39,7 +39,7 @@ A successful authentication will look like such.
 
 ### Clone a Repository
 
-Cloning a code repository will download its remote contents into the current working directory on your local machine. 
+Cloning a code repository will download its remote contents into the current working directory on your local machine.
 
 ```
 $ gh repo clone nathantym/git-demo
@@ -69,11 +69,11 @@ README.md
 
 ### Pull Latest Changes
 
-Initially, clone will download the most current version of the repository and place you on the main branch. The main branch of the repository is often called main, but can often be seen as master - as of recent, the standard is to name, and even rename, the branch main. 
+Initially, clone will download the most current version of the repository and place you on the main branch. The main branch of the repository is often called main, but can often be seen as master - as of recent, the standard is to name, and even rename, the branch main.
 
 As many developers can be working within the same repository, the main branch, and even other branches, will often be updated frequently. To ensure the local repository has the latest code, the git pull command can be used to pull any code that the local repository may not have.
 
-Pull is a single git command, but its underlying functionality is running two other commands. First, Fetch is run to download the contents from the local repository. Next, Merge is run to take the new refs and merge them into a new local merge commit. Fetch and Merge are worth looking into, but Pull makes this an easy process. 
+Pull is a single git command, but its underlying functionality is running two other commands. First, Fetch is run to download the contents from the local repository. Next, Merge is run to take the new refs and merge them into a new local merge commit. Fetch and Merge are worth looking into, but Pull makes this an easy process.
 
 ```
 $ git pull origin main
@@ -83,7 +83,7 @@ $ git pull origin main
 
 ### Create a feature branch
 
-Chheckout is a command used to switch to another local branch. Adding the -b flag will do the same functionality as the branch command, which is to simply create a branch, but it will create the branch and automatically switch to it. 
+Chheckout is a command used to switch to another local branch. Adding the -b flag will do the same functionality as the branch command, which is to simply create a branch, but it will create the branch and automatically switch to it.
 
 The branch command also provides functionality to check what branch you are on. Prior to creating a branch, the following command can be run to verify that you are on the correct branch to branch off of (if you are on the main branch and create a branch feature/feature_name, it will contain all of the code from the main branch.)
 
@@ -114,7 +114,7 @@ Update code or any other necessary files to be pushed into the repository.
 
 ### Check the Status of Updated Code
 
-After making updates to the codebase, and prior to updating the remote codebase, the status command can be used to check what files have been updated. 
+After making updates to the codebase, and prior to updating the remote codebase, the status command can be used to check what files have been updated.
 
 ```
 $ git status
@@ -179,7 +179,7 @@ Date:   Sun Sep 24 15:53:16 2023 -0500
 
 ### Optional: Squash Commits
 
-As a best practice, branch names, commit messages, and other titles or messages should be concise. It may be the case that multiple commits need to be made, and perhaps the messages are not always such. The squash command can be used to take multiple commits and merge them into one, while applying one message for all of the commits. 
+As a best practice, branch names, commit messages, and other titles or messages should be concise. It may be the case that multiple commits need to be made, and perhaps the messages are not always such. The squash command can be used to take multiple commits and merge them into one, while applying one message for all of the commits.
 
 ```
 $ git log
@@ -227,7 +227,7 @@ Successfully rebased and updated refs/heads/feature/feature_name.
 
 ### Push Code
 
-Finally, the push command can be used to push the changes to the remote repository. 
+Finally, the push command can be used to push the changes to the remote repository.
 
 ```
 $ git push origin feature/feature_name
@@ -250,10 +250,12 @@ To https://github.com/nathantym/git-demo.git
 
 ### Pull Request
 
-In the above example, [the link can be used to navigate to the page](https://github.com/nathantym/git-demo/pull/new/feature/feature_name) to create a Pull Request. 
+In the above example, [the link can be used to navigate to the page](https://github.com/nathantym/git-demo/pull/new/feature/feature_name) to create a Pull Request.
 
 
+## TODOS
 
+Add notes about merge conflicts
 
 
 
